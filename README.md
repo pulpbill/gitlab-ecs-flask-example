@@ -196,7 +196,7 @@ vim .gitlab-ci.yml
 
 - **Note:** Remember to leave your gitlab-runner running in order to test this
 
-#### Other useful commands and personal notes:
+### Other useful commands and personal notes:
 
 Confirm your registry
 ```
