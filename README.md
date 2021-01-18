@@ -13,6 +13,8 @@ In order to follow this tutorial, you'll need:
 
 - Docker engine (I use docker desktop for Windows 10)
 
+---
+
 #### Python app:
 
 - Setting up a python virtual env:
@@ -45,6 +47,8 @@ python app.py
 pip freeze > requirements.txt 
 ```
 
+---
+
 #### Dockerfile app:
 
 - Create your Dockerfile (use the same Dockerfile in this repo)
@@ -76,6 +80,8 @@ docker build -t flaskapp2020 .
 docker images
 ```
 
+---
+
 #### Dockerhub:
 
 - Create a public repository at your account: https://hub.docker.com/repository/create
@@ -97,6 +103,8 @@ docker tag flaskapp <your-username>/flaskapp2020:latest
 docker image push <your-username>/flaskapp2020:latest 
 ```
 
+---
+
 #### Gitlab Project repository:
 - Create a public Project via GUI: https://docs.gitlab.com/ee/gitlab-basics/create-project.html
 
@@ -110,6 +118,8 @@ git add .
 git commit -m "Initial commit"
 git push -u origin master 
 ```
+
+---
 
 #### Setup a Gitlab Runner:
 
@@ -150,6 +160,8 @@ sudo gitlab-runner register
 sudo gitlab-runner verify 
 ```
 
+---
+
 #### Create an AWS ECS cluster:
 
 - Login into your AWS console, go to ECS services and setup a cluster as follow: 
@@ -160,6 +172,8 @@ sudo gitlab-runner verify
         - Load Balancer Type: ALB
         - Clustername: flaskcluster
         - Create
+
+---
 
 #### Gitlab CI/CD:
 
@@ -179,9 +193,13 @@ vim .gitlab-ci.yml
 
 - **Note:** The ECS cluster must be setup beforhand, this will update it (previous step)
 
+---
+
 #### Validate:
 
 - Go to your AWS console, at Load Balancers section, look for the DNS name (auto generated endpoint by AWS) and access it on port 5000
+
+---
 
 #### Test your CI/CD:
 
@@ -195,6 +213,8 @@ vim .gitlab-ci.yml
 - Repeat the "Validate" step and refresh the DNS endpoint, you should see "V2" now
 
 - **Note:** Remember to leave your gitlab-runner running in order to test this
+
+---
 
 ### Other useful commands and personal notes:
 
