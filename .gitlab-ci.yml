@@ -7,4 +7,3 @@ buildjob:
     - docker build -t $CI_REGISTRY_IMAGE:latest .
     - docker image push $CI_REGISTRY/$CI_PROJECT_PATH:latest
     - aws ecs update-service --cluster flaskcluster --service flaskapp-service --force-new-deployment
-
