@@ -1,4 +1,4 @@
-# Gitlab CI/CD for Docker, Python Flask, AWS ECS Dev Ops | Gitlab CI/CD Docker Deployment on AWS ECS
+# Gitlab CI/CD for Docker, Python Flask, AWS ECS - DevOps
 ### Source: These notes were the steps I had to do in order to follow Ankit Malhotra's YT tutorial: https://www.youtube.com/watch?v=vb7w7jnkD2s
 
 - **Note:** I did some minor changes: Python 3 - Added a docker login line to gitlab-ci file - Gitlab variables for the pipelines (including AWS credentials instead of using them locally)
