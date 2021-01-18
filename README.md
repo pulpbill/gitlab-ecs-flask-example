@@ -148,7 +148,7 @@ sudo gitlab-runner run
 sudo gitlab-runner register
 ```
 
-- In order to get the token and configure the Runner, go to: https://gitlab.com/`<youruser>`/flaskapp/-/settings/ci_cd and complete as follow:
+- In order to get the token and configure the Runner, go to: https://gitlab.com/ `<your-username>` /flaskapp/-/settings/ci_cd and complete as follow:
     - coordinator: https://gitlab.com/
     - token: `<your-project-token>`
     - description: `<what-ever-you-want>`
