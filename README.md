@@ -239,7 +239,7 @@ AWS_ACCESS_KEY_ID = `<your-aws-acces-key>`
 
 AWS_SECRET_ACCESS_KEY = `<you-aws-secret-key>`
 
-AWS_DEFAULT_REGION = `<your-aws-prefered-region>` # I used the cheapeast> us-east-1
+AWS_DEFAULT_REGION = `<your-aws-prefered-region>` # I used the cheapest: us-east-1
 
 - **Note:** Remember to mask your credentials: https://docs.gitlab.com/ee/ci/variables/README.html#custom-environment-variables
     - Masked values are hidden at job logs
